@@ -13,7 +13,7 @@ import (
 	"github.com/OpenBazaar/multiwallet/cache"
 	"github.com/OpenBazaar/multiwallet/keys"
 	laddr "github.com/OpenBazaar/multiwallet/litecoin/address"
-	maddr "github.com/OpenBazaar/multiwallet/monacoin/address"
+	maddr "github.com/monaco-ex/multiwallet/monacoin/address"
 	"github.com/OpenBazaar/multiwallet/model"
 	"github.com/OpenBazaar/multiwallet/util"
 	zaddr "github.com/OpenBazaar/multiwallet/zcash/address"

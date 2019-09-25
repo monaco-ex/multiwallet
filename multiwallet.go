@@ -10,7 +10,7 @@ import (
 	"github.com/OpenBazaar/multiwallet/client/blockbook"
 	"github.com/OpenBazaar/multiwallet/config"
 	"github.com/OpenBazaar/multiwallet/litecoin"
-	"github.com/OpenBazaar/multiwallet/monacoin"
+	"github.com/monaco-ex/multiwallet/monacoin"
 	"github.com/OpenBazaar/multiwallet/service"
 	"github.com/OpenBazaar/multiwallet/zcash"
 	"github.com/OpenBazaar/wallet-interface"

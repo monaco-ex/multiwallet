@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"strings"
 
-	mparams "github.com/OpenBazaar/multiwallet/monacoin/params"
+	mparams "github.com/monaco-ex/multiwallet/monacoin/params"
 	"github.com/monasuite/monad/btcec"
 	"github.com/monasuite/monad/chaincfg"
 	"github.com/monasuite/monad/txscript"

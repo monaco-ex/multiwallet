@@ -2,7 +2,7 @@ package util
 
 import (
 	liteaddr "github.com/OpenBazaar/multiwallet/litecoin/address"
-	monaaddr "github.com/OpenBazaar/multiwallet/monacoin/address"
+	monaaddr "github.com/monaco-ex/multiwallet/monacoin/address"
 	zaddr "github.com/OpenBazaar/multiwallet/zcash/address"
 	"github.com/btcsuite/btcd/chaincfg"
 	"github.com/btcsuite/btcutil"

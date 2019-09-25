@@ -9,7 +9,7 @@ import (
 	"github.com/OpenBazaar/multiwallet/cache"
 	"github.com/OpenBazaar/multiwallet/datastore"
 	"github.com/OpenBazaar/multiwallet/keys"
-	maddr "github.com/OpenBazaar/multiwallet/monacoin/address"
+	maddr "github.com/monaco-ex/multiwallet/monacoin/address"
 	"github.com/OpenBazaar/multiwallet/model/mock"
 	"github.com/OpenBazaar/multiwallet/service"
 	"github.com/OpenBazaar/multiwallet/util"
