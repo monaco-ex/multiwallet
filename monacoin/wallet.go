@@ -12,7 +12,7 @@ import (
 	"github.com/OpenBazaar/multiwallet/client"
 	"github.com/OpenBazaar/multiwallet/config"
 	"github.com/OpenBazaar/multiwallet/keys"
-	maddr "github.com/OpenBazaar/multiwallet/Monacoin/address"
+	maddr "github.com/monaco-ex/multiwallet/monacoin/address"
 	"github.com/OpenBazaar/multiwallet/model"
 	"github.com/OpenBazaar/multiwallet/service"
 	"github.com/OpenBazaar/multiwallet/util"

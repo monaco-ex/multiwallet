@@ -25,7 +25,7 @@ import (
 	"github.com/monasuite/monautil"
 	"github.com/monasuite/monawallet/wallet/txrules"
 
-	maddr "github.com/OpenBazaar/multiwallet/monacoin/address"
+	maddr "github.com/monaco-ex/multiwallet/monacoin/address"
 	"github.com/OpenBazaar/multiwallet/util"
 )
 
