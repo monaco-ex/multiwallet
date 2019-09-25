@@ -13,7 +13,7 @@ import (
 	"github.com/monasuite/monad/txscript"
 	"github.com/monasuite/monautil"
 	"github.com/monasuite/monautil/bech32"
-	"github.com/monasuite/golangcrypto/ripemd160"
+	"github.com/btcsuite/golangcrypto/ripemd160"
 	monaparams "github.com/monasuite/monad/chaincfg"
 	"github.com/monasuite/monautil/base58"
 )
