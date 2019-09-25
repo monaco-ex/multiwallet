@@ -1,4 +1,4 @@
-module github.com/Openbazaar/multiwallet
+module github.com/OpenBazaar/multiwallet
 
 go 1.12
 
