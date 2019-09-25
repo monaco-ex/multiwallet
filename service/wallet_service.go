@@ -13,6 +13,7 @@ import (
 	"github.com/OpenBazaar/multiwallet/cache"
 	"github.com/OpenBazaar/multiwallet/keys"
 	laddr "github.com/OpenBazaar/multiwallet/litecoin/address"
+	maddr "github.com/OpenBazaar/multiwallet/monacoin/address"
 	"github.com/OpenBazaar/multiwallet/model"
 	"github.com/OpenBazaar/multiwallet/util"
 	zaddr "github.com/OpenBazaar/multiwallet/zcash/address"
@@ -618,6 +619,13 @@ func (ws *WalletService) getStoredAddresses() map[string]storedAddress {
 				continue
 			}
 			addr = ltcAddr
+		case wallet.Monacoin:
+			monaAddr, err := maddr.ExtractPkScriptAddrs(script, ws.params)
+			if err != nil {
+				Log.Warningf("error serializing %s script: %s", ws.coinType.String(), err.Error())
+				continue
+			}
+			addr = monaAddr
 		}
 		addrs[addr.String()] = storedAddress{addr, true}
 	}

@@ -9,6 +9,7 @@ import (
 	"github.com/OpenBazaar/multiwallet/bitcoin"
 	"github.com/OpenBazaar/multiwallet/bitcoincash"
 	"github.com/OpenBazaar/multiwallet/litecoin"
+	"github.com/monaco-ex/multiwallet/monacoin"
 	"github.com/OpenBazaar/multiwallet/zcash"
 	"github.com/OpenBazaar/wallet-interface"
 	"github.com/btcsuite/btcutil"
@@ -47,6 +48,8 @@ func coinType(coinType pb.CoinType) wallet.CoinType {
 		return wallet.Zcash
 	case pb.CoinType_LITECOIN:
 		return wallet.Litecoin
+	case pb.CoinType_MONACOIN:
+		return wallet.Monacoin
 	default:
 		return wallet.Bitcoin
 	}
@@ -270,6 +273,11 @@ func (s *server) DumpTables(in *pb.CoinSelection, stream pb.API_DumpTablesServer
 	litecoinWallet, ok := wal.(*litecoin.LitecoinWallet)
 	if ok {
 		litecoinWallet.DumpTables(&writer)
+		return nil
+	}
+	monacoinWallet, ok := wal.(*monacoin.MonacoinWallet)
+	if ok {
+		monacoinWallet.DumpTables(&writer)
 		return nil
 	}
 	zcashWallet, ok := wal.(*zcash.ZCashWallet)

@@ -2,6 +2,7 @@ package util
 
 import (
 	liteaddr "github.com/OpenBazaar/multiwallet/litecoin/address"
+	monaaddr "github.com/OpenBazaar/multiwallet/monacoin/address"
 	zaddr "github.com/OpenBazaar/multiwallet/zcash/address"
 	"github.com/btcsuite/btcd/chaincfg"
 	"github.com/btcsuite/btcutil"
@@ -21,6 +22,9 @@ func DecodeAddress(address string, params *chaincfg.Params) (btcutil.Address, er
 		return addr, nil
 	}
 	if addr, err := liteaddr.DecodeAddress(address, params); err == nil {
+		return addr, nil
+	}
+	if addr, err := monaaddr.DecodeAddress(address, params); err == nil {
 		return addr, nil
 	}
 	if addr, err := zaddr.DecodeAddress(address, params); err == nil {

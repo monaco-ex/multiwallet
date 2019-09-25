@@ -85,6 +85,8 @@ func coinType(args []string) pb.CoinType {
 		return pb.CoinType_ZCASH
 	case "litecoin":
 		return pb.CoinType_LITECOIN
+	case "monacoin":
+		return pb.CoinType_MONACOIN
 	case "ethereum":
 		return pb.CoinType_ETHEREUM
 	default:
