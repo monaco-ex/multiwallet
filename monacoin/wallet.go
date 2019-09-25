@@ -20,7 +20,7 @@ import (
 	"github.com/monasuite/monad/chaincfg"
 	"github.com/monasuite/monad/chaincfg/chainhash"
 	"github.com/monasuite/monad/wire"
-	"github.com/monasuite/btcutil"
+	"github.com/btcsuite/btcutil"
 	hd "github.com/monasuite/monautil/hdkeychain"
 	"github.com/monasuite/monautil"
 	"github.com/monasuite/monawallet/wallet/txrules"
